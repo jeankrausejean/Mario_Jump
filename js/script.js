@@ -23,11 +23,11 @@ const loop = setInterval(() => {
         mario.style.animation = 'none';
         mario.style.bottom = `${pipePosition}px`;
 
-        mario.src = '/images/game-over.png';
+        mario.src = './images/game-over.png';
         mario.style.width = '75px'
         mario.style.marioLeft = '50px'
 
-        clearInterval(loop);
+        clearInterval(loop); 
 
     }
 
