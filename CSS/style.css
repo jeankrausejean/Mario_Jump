@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 .game-board {
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 15px solid color green;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
 }
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 80px;
-    animation: pipe-animation 2s infinite linear;
+    width: 70px;
+    animation: pipe-animation 1.5s infinite linear;
    
 }
 .mario {
@@ -26,6 +27,11 @@
 }
 .jump {
     animation: jump 500ms ease-out;
+}
+.nuvem {
+    position: absolute;
+    width: 550px;
+    animation: nuvem-animation 20s infinite linear;
 }
 
 @keyframes pipe-animation {
@@ -58,3 +64,13 @@
     }
 
 }
+@keyframes nuvem-animation {
+    from{
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+
